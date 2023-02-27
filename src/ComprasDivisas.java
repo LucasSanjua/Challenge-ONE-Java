@@ -1,3 +1,5 @@
+import javax.swing.JOptionPane;
+
 public class ComprasDivisas{
     private double cantidad;
     
@@ -9,7 +11,7 @@ public class ComprasDivisas{
             this.cantidad= Double.parseDouble(cantidad);/* Convierto la divisa en un double */
 
         }catch(NumberFormatException exception){
-            System.out.println("ERROR solamente ingresar valores numeros.");
+            JOptionPane.showMessageDialog(null,"ERROR solamente ingresar valores numeros.");
         }
     }
 
