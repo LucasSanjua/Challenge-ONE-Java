@@ -1,9 +1,9 @@
 import javax.swing.JOptionPane;
 
-public class ConversoDivisa{
+public class ConversionDivisa{
     private double cantidad;
     
-    public ConversoDivisa (String cantidad) {
+    public ConversionDivisa (String cantidad) {
         /* Convierto en valor ingresado por teclado a double */
         /* Verifico  que solamente ingresen numeros */
 
