@@ -1,4 +1,4 @@
-public class Dolar extends Divisas {
+public class Dolar extends Divisas   {
     
     public Dolar() {
         super(198, "Dolar");
