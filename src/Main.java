@@ -147,7 +147,45 @@ public class Main {
                         }
 
                     case "Conversor de temperatura":
-                        /* Agregar  la opcion para  seleccionar las temperaturas a convertir */
+                        String UnidadTemperatura =  (JOptionPane.showInputDialog(null,"Seleccione la conversion que desea realizar","Operacion",JOptionPane.PLAIN_MESSAGE,null,new Object[]{"Seleccionar","Convertir de Fahrenheit a Celsius","Convertir de Celsius a Fahrenheit","Convertir de Celsius a Kelvin", "Convertir de Kelvin a Celsius","Convertir de Kelvin a Fahrenheit","Fahrenheit a Kelvin"},"Selecciona")).toString();
+
+                        switch(UnidadTemperatura){
+                            case "Convertir de Fahrenheit a Celsius":
+                                cantidad=JOptionPane.showInputDialog("Ingrese la temperatura en Fahrenheit que desea pasar  a Celsius");
+                                temperatura.MedirTemperatura(cantidad);
+                                temperatura.FahrenheitaCelsius();
+                            break;
+                            
+                            case "Convertir de Celsius a Fahrenheit":
+                                cantidad=JOptionPane.showInputDialog("Ingrese la temperatura en Celsius que desea pasar  a Fahrenheit ");
+                                temperatura.MedirTemperatura(cantidad);
+                                temperatura.CelsiusaFahrenheit();
+                            break;
+
+                            case "Convertir de Celsius a Kelvin":
+                                cantidad=JOptionPane.showInputDialog("Ingrese la temperatura en Celsius que desea pasar  a Kelvin ");
+                                temperatura.MedirTemperatura(cantidad);
+                                temperatura.CelsiusaKelvin();
+                            break;
+
+                            case "Convertir de Kelvin a Celsius":
+                                cantidad=JOptionPane.showInputDialog("Ingrese la temperatura en Kelvin que desea pasar  a Celsius ");
+                                temperatura.MedirTemperatura(cantidad);
+                                temperatura.KelvinaCelsius();
+                            break;
+
+                            case "Convertir de Kelvin a Fahrenheit":
+                                cantidad=JOptionPane.showInputDialog("Ingrese la temperatura en Kelvin que desea pasar  a Fahrenheit ");
+                                temperatura.MedirTemperatura(cantidad);
+                                temperatura.KelvinaFahrenheit();
+                            break;
+
+                            case "Convertir de Fahrenheit a Kelvin":
+                                cantidad=JOptionPane.showInputDialog("Ingrese la temperatura en Fahrenheit que desea pasar  a Kelvin");
+                                temperatura.MedirTemperatura(cantidad);
+                                temperatura.FahrenheitaKelvin();
+                            break;
+                        }
                 }
 
                 

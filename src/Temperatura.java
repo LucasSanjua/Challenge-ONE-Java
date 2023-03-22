@@ -5,12 +5,19 @@ public class Temperatura {
 
     public Temperatura (){} 
 
-    public void  MedirTemperatura (double medicion){
-        this.medicion = medicion; 
+    public void  MedirTemperatura (String medicion){
+        try{
+            this.medicion= Double.parseDouble(medicion);/* Convierto la temperatura en un double */
+
+        }catch(NumberFormatException exception){
+            JOptionPane.showMessageDialog(null,"ERROR solamente ingresar valores numeros.");
+        }
+        
 
     }
 
     public void FahrenheitaCelsius(){
+        
         double celsius =  (this.medicion - 32) * 5/9 ;
         JOptionPane.showMessageDialog(null,"El la temperatura en Celsius  es de "+celsius);
     }   
